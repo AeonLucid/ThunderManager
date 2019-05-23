@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using Microsoft.Win32;
 
 namespace ThunderManager.Core.Steam
@@ -13,7 +14,6 @@ namespace ThunderManager.Core.Steam
         };
 
         private string _steamInstallPath;
-
         private readonly List<string> _steamLibraries;
 
         public SteamLocator()
